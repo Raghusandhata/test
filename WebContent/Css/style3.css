@@ -1,0 +1,91 @@
+
+*                   { margin: 0; padding: 0; }
+body		    { font: 15px/2 TimesNewRoman; background:#6094DB; }
+#color               {background:#FFFFFF;height:730px;max-width: 1000px; min-width: 560px;margin: 15px auto auto auto; position: relative;
+                      border-width: 1px;
+
+	border-color:#000000;border-style:ridge;}
+h1                  { color: #5F04B4; padding: 10px; }
+#header             { max-width: 1000px; min-width: 560px;  margin: 0 auto 0;border-width:1px;border-style:ridge;
+                      height:110px; }
+
+#header a           { color:#FFFFFF;}   
+#page-wrap          { max-width: 960px; min-width: 560px; margin: 1px auto 0; position: relative;height:602px; }
+
+
+#main-sidebar1     {
+	position: absolute;
+	left: 6px;
+	top: 18px;
+	width: 250px;
+	bottom: 0px;
+	background:#F8FBFE;
+	padding: 0px,0px,0px,10px;
+	height: 180px;
+	border-width: 1px;
+	
+	border-color:#75B4FF ;border-style:ridge;
+}
+
+
+
+#main-sidebar2    {
+	position: absolute;
+	left: 6px;
+	top: 240px;
+	width: 250px;
+	bottom: 0px;
+	background:#F8FBFE;
+	padding: 0px,0px,0px,10px;
+	height: 325px;
+	border-width: 1px;
+	
+	border-color:#75B4FF ;border-style:ridge;
+}
+#main-sidebar3    {
+	position: absolute;
+	left: 484px;
+	top: 138px;
+	width: 375px;
+	bottom: 0px;
+	background:#F8FBFE;
+	padding: 0px,10px;
+	height: 195px;
+	border-width: 1px;
+	border-color:#75B4FF ;border-style:ridge;
+}
+#main-sidebar4    {
+	position: absolute;
+	left: 764px;
+	top: 199px;
+	width: 185px;
+	bottom: 0px;
+	background:#F8FBFE;
+	padding: 0px,10px,0px,0px;
+	height: 140px;
+	border-width: 1px;
+	border-color:#75B4FF ;border-style:ridge;
+}
+#main-sidebar5    {
+	position: absolute;
+	left: 764px;
+	top: 360px;
+	width: 185px;
+	bottom: 0px;
+	background:#F8FBFE;
+	padding: 0px,10px,0px,0px;
+	height: 130px;
+	border-width: 1px;
+	border-color:#75B4FF ;border-style:ridge;
+}
+
+#main-content1       { padding: 0 0 0 10px; background: white; position: absolute;left: 275px;width: 475px;height: 560px;top: 3px;border-width: 1px;
+	border-style:ridge;
+	border-color: #FFFFFF; } 
+
+       
+#color2
+{ background:#6094DB;height:35px;width: 250px; position: absolute; }
+
+#color3
+{ background:#6094DB;height:35px;width: 185px; position: absolute; }

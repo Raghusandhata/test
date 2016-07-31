@@ -1,0 +1,57 @@
+apply plugin: 'java'
+apply plugin: 'war'
+apply from: "G:/Gradle_myStudy/HotAir/versioning.gradle"
+
+webAppDirName = 'WebContent'
+
+
+
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(dir: "G:/Gradle_myStudy/dependencyJars", include: '*.jar')
+    testCompile 'junit:junit:4.12'
+    runtime fileTree(dir: "G:/Gradle_myStudy/dependencyJars/War", include: '*.jar')
+    
+}
+
+
+
+sourceSets {
+  main {
+     java {
+        srcDir 'src/com/hotair'  
+        } 
+     }
+  test {
+     java {
+        srcDir 'src/test/unitTest'
+        } 
+     }
+   } 
+
+   task createBuildInfoFile << {
+    
+    def buildInfoFile = new File("$buildDir/build-info.properties")
+    Properties props = new Properties()
+    props.setProperty('version', project.version.toString())
+    props.setProperty('timestamp', project.buildTimestamp)
+    props.store(buildInfoFile.newWriter(), null)
+ }
+
+war  {
+  
+    dependsOn test
+    dependsOn createBuildInfoFile
+    
+    baseName = 'hotair'
+    webXml = file('WebContent/WEB-INF/web.xml') // copies a file to WEB-INF/web.xml
+    from(buildDir) {
+
+       include 'build-info.properties'
+    }
+} 
