@@ -1,3 +1,5 @@
+
+
 apply plugin: 'java'
 apply plugin: 'war'
 apply from: "G:/Gradle_myStudy/HotAir/versioning.gradle"
@@ -36,7 +38,13 @@ sourceSets {
      }
    } 
 
+   compileJava {
+
+           dependsOn clean
+   }
+
    task createBuildInfoFile << {
+
     
     def buildInfoFile = new File("$buildDir/build-info.properties")
     Properties props = new Properties()
