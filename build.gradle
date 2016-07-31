@@ -4,7 +4,9 @@ apply from: "G:/Gradle_myStudy/HotAir/versioning.gradle"
 
 webAppDirName = 'WebContent'
 
-
+clean {
+    
+}
 
 
 
